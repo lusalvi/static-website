@@ -102,21 +102,21 @@ h1 {
 	padding: 20px;
 }
 
-.service {
+.carreras {
 	background-image: url(assets/img-banner@2x.png);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
-.about {
+.nosotros {
 	background-image: url(assets/DSC_0036.JPG);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
 }
 
-.blog {
+.novedades {
 	background-image: url(assets/banner-texture@2x.png);
 	height: 100vh;
 	background-size: cover;
@@ -124,7 +124,7 @@ h1 {
 
 }
 
-.contact {
+.contacto {
 	background-image: url(assets/img-contact-form-bg.jpg);
 	height: 100vh;
 	background-size: cover;
