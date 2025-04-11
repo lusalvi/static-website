@@ -308,7 +308,7 @@ h1 {
 }
 
 .contacto {
-	background-image: url(assets/img-contact-form-bg.jpg);
+	background-image: url(https://www.uncuyo.edu.ar/prensa/cache/c4b53ba9d6257194d7ef7473c36a2e92_608_1076.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -347,7 +347,7 @@ h1 {
 }
 
 .form input.button {
-    background-color: #4CAF50; /* Green */
+    background-color: #0a545a; /* Green */
     border: none;
     color: white;
     width: 71%;
@@ -370,6 +370,78 @@ input[type=number]::-webkit-inner-spin-button,
  	height: 150px;
  	color: black;
  }
+
+ .faq {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img-prop-type@2x.jpg);
+    height: auto;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: white;
+}
+
+.faq .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.faq .grid-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    border-left: 4px solid #0a545a;
+    color: #333;
+}
+
+.faq .grid-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.faq h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #0a545a;
+    position: relative;
+    padding-left: 22px;
+}
+
+.faq p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 22px;
+}
+
+/* Para añadir un título a la sección */
+.faq-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.faq-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.faq-header p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
 
 @media
   (-webkit-min-device-pixel-ratio: 2),
