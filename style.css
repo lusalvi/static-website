@@ -103,25 +103,208 @@ h1 {
 }
 
 .carreras {
-	background-image: url(assets/img-banner@2x.png);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-image: url(assets/img-banner@2x.png);
+    height: auto;  /* Cambiado de 100vh a auto para adaptarse al contenido */
+    min-height: 100vh; /* Aseguramos que al menos ocupe toda la altura de la pantalla */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;  /* Añadimos padding vertical */
+    position: relative;
+}
+
+/* Agregamos un overlay para mejorar la legibilidad del texto */
+.carreras:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);  /* Fondo claro semi-transparente */
+    z-index: 1;
+}
+
+/* Aseguramos que el contenido esté por encima del overlay */
+.carreras .grid-container {
+    position: relative;
+    z-index: 2;
+}
+
+.carreras .grid-item {
+    padding: 25px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+    border-left: 4px solid #0a545a;  /* Borde izquierdo con el color institucional */
+}
+
+.carreras .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carreras h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #0a545a;  /* Color institucional */
+}
+
+.carreras p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
 }
 
 .nosotros {
-	background-image: url(assets/DSC_0036.JPG);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://itu.uncuyo.edu.ar/cache/campus-tic-itu-uncuyo_608_1076_c.jpg);
+    height: auto;  /* Cambiado de 100vh a auto para adaptarse al contenido */
+    min-height: 100vh; /* Aseguramos que al menos ocupe toda la altura de la pantalla */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 0;  /* Añadimos padding vertical */
 }
 
-.novedades {
-	background-image: url(assets/banner-texture@2x.png);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+.nosotros .grid-item {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fondo semi-transparente para mejorar legibilidad */
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+.nosotros h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 2px solid #0a545a;
+    padding-bottom: 10px;
+}
+
+.nosotros h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.nosotros p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nosotros ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.nosotros li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.nosotros strong {
+    color: #338890; /* Color que destaca para términos importantes */
+}
+
+
+
+.novedades {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/banner-texture@2x.png);
+    height: auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.novedades .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.novedades .grid-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border-top: 4px solid #0a545a;
+    position: relative;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.novedades .grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.novedades h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0a545a;
+}
+
+.novedades p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.novedades .fecha {
+    display: inline-block;
+    background-color: #0a545a;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.novedades .boton-leer {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #0a545a;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.novedades .boton-leer:hover {
+    background-color: #084148;
+}
+
+.novedades .categoria {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px 8px;
+    font-size: 11px;
+    border-bottom-left-radius: 6px;
 }
 
 .contacto {
@@ -198,4 +381,5 @@ input[type=number]::-webkit-inner-spin-button,
   	.faq {
     	background-image: url(assets/img-prop-type@2x.jpg) !important;
   	}
+	
 }
