@@ -8,11 +8,11 @@ body {
 }
 
 header {
-	background-image: url(assets/banner-bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://itu.uncuyo.edu.ar/cache/sede-central_608_1076_c.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-}
+  }
 
 .main-nav {
 	float: right;
@@ -84,11 +84,11 @@ h1 {
 }
 
 .btn-one {
-	background-color: darkorange;
+	background-color: #0a545a;
 }
 
 .btn-two:hover {
-	background-color: darkorange;
+	background-color: #0a545a;
 	transition: all 0.2s ease-in;
 }
 
